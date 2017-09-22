@@ -66,11 +66,33 @@ footer p {
 .div3 {
   padding-top: 7em;
 }
-/*media for mobile */
+/*button styling*/
+/*.button {
+    margin-left: 32%;
+    margin-top: 2em;
+}*/
+.btn-outlined {
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-outlined.btn-primary {
+  background: none;
+  border: 3px solid #333333;
+  color: #333333;
+}
+.btn-outlined.btn-primary:hover,
+.btn-outlined.btn-primary:active {
+  color: #FFF;
+  background: #333333;
+  border-color: #333333;
+}
+/*media for mobile --------------------------------------------------------*/
 @media only screen and (max-width: 736px) {
   .logo {
     width: 17%;
-    left: 48%;
+    left: 50%;
   }
   .logo-text {
     display: none;
@@ -79,6 +101,10 @@ footer p {
     padding-top: 1em;
     /* text-align: center; */
     padding-left: 51px;
+  }
+  .navbar-nav {
+    text-align: center;
+    padding-top: 20px;
   }
 }
 /**Portfolio page coded using Bootstrap. Nav bar inspired by http://www.chris-cook.net/-->
